@@ -8,4 +8,9 @@ public class Plus extends Function {
     public double calculate() {
         return left.calculate()+right.calculate();
     }
+
+    @Override
+    public char getOperator() {
+        return '+';
+    }
 }

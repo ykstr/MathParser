@@ -1,5 +1,5 @@
 package de.ykstr.entities;
 
-public interface Calculatable {
+public interface Calculable {
     public double calculate();
 }

@@ -1,13 +1,25 @@
 package de.ykstr.entities.functions;
 
+import de.ykstr.entities.BinaryFunction;
 import de.ykstr.entities.Calculable;
+import de.ykstr.entities.StringPair;
+import de.ykstr.entities.UnaryFunction;
 
-public class Braces implements Calculable {
+public class Braces extends UnaryFunction {
     private Calculable inner;
 
-    public Braces(Calculable inner){
-        setInner(inner);
+    public Braces(Calculable inner) {
+        super(inner);
     }
+
+    public Braces(int inner) {
+        super(inner);
+    }
+
+    public Braces(double inner) {
+        super(inner);
+    }
+
 
     public Calculable getInner() {
         return inner;
@@ -15,6 +27,11 @@ public class Braces implements Calculable {
 
     public void setInner(Calculable inner) {
         this.inner = inner;
+    }
+
+    @Override
+    public StringPair getBoundaries() {
+        return new StringPair("(",")");
     }
 
     @Override

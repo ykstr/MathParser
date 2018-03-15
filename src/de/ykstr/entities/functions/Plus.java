@@ -1,9 +1,9 @@
 package de.ykstr.entities.functions;
 
 import de.ykstr.entities.Calculable;
-import de.ykstr.entities.Function;
+import de.ykstr.entities.BinaryFunction;
 
-public class Plus extends Function {
+public class Plus extends BinaryFunction {
 
     public Plus(Calculable left, Calculable right) {
         super(left, right);

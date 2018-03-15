@@ -1,10 +1,10 @@
 package de.ykstr.entities;
 
-public abstract class Function implements Calculable {
+public abstract class BinaryFunction implements Calculable {
     protected Calculable left;
     protected Calculable right;
 
-    public Function(Calculable left, Calculable right){
+    public BinaryFunction(Calculable left, Calculable right){
         setLeft(left);
         setRight(right);
     }
@@ -14,7 +14,7 @@ public abstract class Function implements Calculable {
      * @param left
      * @param right
      */
-    public Function(double left, double right){
+    public BinaryFunction(double left, double right){
         setLeft(new Variable(left));
         setRight(new Variable(right));
     }

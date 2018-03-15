@@ -1,9 +1,9 @@
 package de.ykstr.entities.functions;
 
 import de.ykstr.entities.Calculable;
-import de.ykstr.entities.Function;
+import de.ykstr.entities.BinaryFunction;
 
-public class Division extends Function{
+public class Division extends BinaryFunction {
 
     public Division(Calculable left, Calculable right) {
         super(left, right);

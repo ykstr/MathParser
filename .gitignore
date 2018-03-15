@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Created by https://www.gitignore.io/api/java,windows,intellij
 
@@ -67,6 +68,8 @@ fabric.properties
 .idea/sonarlint
 
 ### Java ###
+=======
+>>>>>>> 259eac28c0a2800259277412ec5c9d4c963fa055
 # Compiled class file
 *.class
 
@@ -89,6 +92,7 @@ fabric.properties
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+<<<<<<< HEAD
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -113,3 +117,5 @@ $RECYCLE.BIN/
 
 
 # End of https://www.gitignore.io/api/java,windows,intellij
+=======
+>>>>>>> 259eac28c0a2800259277412ec5c9d4c963fa055

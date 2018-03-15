@@ -34,6 +34,14 @@ public class Variable implements Calculable {
 
     @Override
     public String toString() {
-        return (value == null)? Character.toString(name):Double.toString(value);
+        if(value == null){
+            return Character.toString(name);
+        }else{
+            if(value % 1 == 0){
+                return String.format("%1.0f",value);
+            }else{
+                return Double.toString(value);
+            }
+        }
     }
 }

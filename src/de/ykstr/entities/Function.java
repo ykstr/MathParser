@@ -9,6 +9,16 @@ public abstract class Function implements Calculable {
         setRight(right);
     }
 
+    /**
+     * Convencience constructor for functions based on constant values rather then subfunctions
+     * @param left
+     * @param right
+     */
+    public Function(double left, double right){
+        setLeft(new Variable(left));
+        setRight(new Variable(right));
+    }
+
     abstract public char getOperator();
 
     public void setLeft(Calculable left){

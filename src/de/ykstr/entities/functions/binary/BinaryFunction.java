@@ -1,4 +1,7 @@
-package de.ykstr.entities;
+package de.ykstr.entities.functions.binary;
+
+import de.ykstr.entities.Calculable;
+import de.ykstr.entities.variables.Variable;
 
 public abstract class BinaryFunction implements Calculable {
     protected Calculable left;

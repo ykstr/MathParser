@@ -1,7 +1,6 @@
-package de.ykstr.entities.functions;
+package de.ykstr.entities.functions.binary;
 
 import de.ykstr.entities.Calculable;
-import de.ykstr.entities.BinaryFunction;
 
 public class Division extends BinaryFunction {
 

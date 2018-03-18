@@ -1,4 +1,4 @@
-package de.ykstr.entities;
+package de.ykstr.entities.functions.unary;
 
 public class StringPair {
     private String left;

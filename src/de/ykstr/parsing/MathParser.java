@@ -1,8 +1,9 @@
 package de.ykstr.parsing;
 
 import de.ykstr.entities.Calculable;
-import de.ykstr.entities.Variable;
-import de.ykstr.entities.functions.*;
+import de.ykstr.entities.variables.Variable;
+import de.ykstr.entities.functions.binary.*;
+import de.ykstr.entities.functions.unary.Braces;
 
 public class MathParser {
 

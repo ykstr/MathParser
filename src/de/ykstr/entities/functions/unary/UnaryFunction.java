@@ -1,6 +1,9 @@
-package de.ykstr.entities;
+package de.ykstr.entities.functions.unary;
 
-public abstract class UnaryFunction implements Calculable{
+import de.ykstr.entities.Calculable;
+import de.ykstr.entities.variables.Variable;
+
+public abstract class UnaryFunction implements Calculable {
     private Calculable inner;
 
     public UnaryFunction(Calculable inner){

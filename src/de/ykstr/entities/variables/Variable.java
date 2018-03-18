@@ -1,4 +1,6 @@
-package de.ykstr.entities;
+package de.ykstr.entities.variables;
+
+import de.ykstr.entities.Calculable;
 
 public class Variable implements Calculable {
     private String name;

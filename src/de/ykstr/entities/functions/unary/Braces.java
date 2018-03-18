@@ -1,9 +1,6 @@
-package de.ykstr.entities.functions;
+package de.ykstr.entities.functions.unary;
 
-import de.ykstr.entities.BinaryFunction;
 import de.ykstr.entities.Calculable;
-import de.ykstr.entities.StringPair;
-import de.ykstr.entities.UnaryFunction;
 
 public class Braces extends UnaryFunction {
     private Calculable inner;

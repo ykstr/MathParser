@@ -38,6 +38,12 @@ public abstract class BinaryFunction implements Calculable {
     }
 
     @Override
+    public void setVariable(String name, double value){
+        left.setVariable(name, value);
+        right.setVariable(name, value);
+    }
+
+    @Override
     public String toString(){
         return left.toString()+ getOperator() +right.toString();
     }

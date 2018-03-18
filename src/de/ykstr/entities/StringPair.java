@@ -1,8 +1,8 @@
 package de.ykstr.entities;
 
 public class StringPair {
-    String left;
-    String right;
+    private String left;
+    private String right;
 
     public StringPair(String left, String right) {
         this.left = left;

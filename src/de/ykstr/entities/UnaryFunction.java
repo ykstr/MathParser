@@ -24,4 +24,14 @@ public abstract class UnaryFunction implements Calculable{
     }
 
     abstract public StringPair getBoundaries();
+
+    @Override
+    public void setVariable(String name, double value){
+        inner.setVariable(name, value);
+    }
+
+    @Override
+    public String toString() {
+        return getBoundaries().getLeft()+inner.toString()+getBoundaries().getRight();
+    }
 }

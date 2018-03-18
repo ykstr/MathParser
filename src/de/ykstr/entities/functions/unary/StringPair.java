@@ -24,4 +24,9 @@ public class StringPair {
     public void setRight(String right) {
         this.right = right;
     }
+
+    @Override
+    public String toString() {
+        return getLeft()+getRight();
+    }
 }

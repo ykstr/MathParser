@@ -3,7 +3,6 @@ package de.ykstr.entities.functions.unary;
 import de.ykstr.entities.Calculable;
 
 public class Braces extends UnaryFunction {
-    private Calculable inner;
 
     public Braces(Calculable inner) {
         super(inner);
@@ -15,15 +14,6 @@ public class Braces extends UnaryFunction {
 
     public Braces(double inner) {
         super(inner);
-    }
-
-
-    public Calculable getInner() {
-        return inner;
-    }
-
-    public void setInner(Calculable inner) {
-        this.inner = inner;
     }
 
     @Override

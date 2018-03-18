@@ -47,6 +47,28 @@ public abstract class BinaryFunction implements Calculable {
     }
 
     @Override
+    public void printTree(StringBuilder sb, int indent, boolean verbose) {
+        for(int i = 0; i<indent; i++)sb.append(verbose?"\t":" ");
+        if(verbose){
+            sb.append(String.format("%s:%s%n",this.getClass().getSimpleName(),getOperator()));
+        }else{
+            sb.append(getOperator()+"\n");
+        }
+
+        for(int i = 0; i<indent+1; i++)sb.append(verbose?"\t":" ");
+        if(verbose){
+            sb.append("left:\n");
+        }
+        left.printTree(sb, indent+1, verbose);
+
+        for(int i = 0; i<indent+1; i++)sb.append(verbose?"\t":" ");
+        if(verbose){
+            sb.append("right:\n");
+        }
+        right.printTree(sb, indent+1, verbose);
+    }
+
+    @Override
     public String toString(){
         return left.toString()+ getOperator() +right.toString();
     }

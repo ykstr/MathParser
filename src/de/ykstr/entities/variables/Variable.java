@@ -38,7 +38,8 @@ public class Variable implements Calculable {
     }
 
     public double calculate(){
-        return value;
+        if(value == null) throw new NoValueAssignedException(getName());
+        return getValue();
     }
 
     public static boolean isNumeric(String s){
@@ -61,6 +62,17 @@ public class Variable implements Calculable {
             setValue(value);
         }
     }
+
+    @Override
+    public void printTree(StringBuilder sb, int indent, boolean verbose) {
+        for(int i = 0;i<indent;i++)sb.append(verbose?"\t":" ");
+        if(verbose){
+            sb.append(String.format("%s %s:%1.0f%n",this.getClass().getSimpleName(),getName(),getValue()));
+        }else{
+            sb.append(getValue()+"\n");
+        }
+    }
+
 
     @Override
     public String toString() {
